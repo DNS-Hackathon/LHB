@@ -1,0 +1,2 @@
+# getBETTERinfo
+Making getaddrinfo() better
