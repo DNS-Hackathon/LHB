@@ -1,5 +1,9 @@
 # Some existing implementations of getaddrinfo()
 
+At time of writing, three existing implementations of **libc** had
+been inspected, as available on the platforms **FreeBSD**,
+**GNU/Linux**, and **macOS**.
+
 ## Definition of `struct addrinfo`
 
 ### FreeBSD
@@ -75,5 +79,18 @@ The definition used for `struct addrinfo` is identical to that used on FreeBSD.
 | `AI_IDN_USE_STD3_ASCII_RULES` | deprecated                               |
 
 
+## Notes
 
+- The GNU/Linux implementation of **libc** (**glibc**) represents the
+  flag definitions using 16-bit notation, even though the `int` data
+  type usually has at least 32 bits of storage.
 
+- Of the implementations inspected, except for the **macOS** `AI_UNUSABLE` flag,
+  all of the defined values can be represented using a 16-bit "word".
+
+- Of the values which can be represented by not more that 16 bits,
+  only those covered by the mask value `0xe00` (3 bits) are unassigned
+  in all of the implementations inspected.
+  
+- If 32 bits are available, the values covered by `0xefffe000` (18
+  bits) are unassigned in all of these implementations.
