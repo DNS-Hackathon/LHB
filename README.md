@@ -1,81 +1,56 @@
-# getBETTERinfo -- Making getaddrinfo() better
+# LHB -- Lookup Hostname Best-practice
 
 ## Background
 
-The **getaddrinfo()** API has well-known [limitations][]. In the
-[DApper][] project at the 2023 DNS Hackathon, a "solution" was
-sketched out, which identified a preferred resolver library for use
-when building any chosen application. Discussion of this proposal with
-the lead developers of a widely-used application library, supported on
-multiple platforms, evoked strong push-back, due to concerns including:
+The DNS has always been used to do more than address resolution for a
+given hostname.  For example, the MX record type was defined in the very
+beginning in [RFC1035][] (November 1987).
 
-- insufficiant availability of the chosen resolver library on the
-  range of platforms supported by the application library;
-- the degree to which integrating an unfamiliar resolver library might
-  distract from other work to support and develop the application
-  library;
-- doubt over the availablity of the resources of the developers
-  of the chosen resolver library for ongoing maintenance.
+Since than, the variety of record types defined to announce service-specific
+data has never stopped growing.  Despite this, many applications, or the
+libraries on which they are based, have continued to rely on the
+gettaddrinfo() API as their main, or only, means of accessing the DNS.
 
-## Proposed Hackathon Project
+## Proposed Hackathon Projects
 
-Goal: design data structure and related APIs for making HTTPS/SVCB
-data, as well as what getaddrinfo() provides, available, as simply as
-possible, to an application.
+Two projects were proposed, which came to be merged at the beginning of the
+Hackathon
 
-Things to take into account (first three are already handled by getaddrinfo):
+- Ali: anonymous project motivated by obstacles encountered in
+  developing the LadyBird browser engine;
+  
+- Niall: [getBETTERinfo][] project aimed at "Making getaddrinfo() better", either
+  by specifying extensions to the API and underlying data structure, or by
+  "wrapping" this structure in a richer one which would also accommodate
+  relevant DNS data.
+  
+## See also
 
-- [RFC3493][] (addrinfo)
-- [RFC3484][] (address selection policy -- ip6addrctl.conf (BSD), gai.conf(GNU))
-- [nsswitch][]
-- application pragmatics
-- [RFC9460][] (HTTPS/SVCB RRs)
-- [Happy Eyeballs v3 draft][]
+- [Roadmap][]
+- [Progress][]
 
-## Resources
+## TODO
 
-- [RFC3484][]: "Default Address Selection for Internet Protocol version 6 (IPv6)"
+- Add description of Ali's proposed project
+- Add POC code from Ali and Asbjørn
+- Add gap analysis showing application requirements not met by getaddrinfo()
 
-- [RFC3493][]: "Basic Socket Interface Extensions for IPv6"
+## Etymology
 
-- [RFC9460][]: "Service Binding and Parameter Specification via the DNS (SVCB and HTTPS Resource Records)"
+The project title is a backronym from "LHB", an abbreviation of the Dutch
+word "LieveHeerBeestje", which means "Ladybird" (American: "LadyBug"),
+and refers to the project which motivated Ali's proposal.
 
-- [Happy Eyeballs v3 draft][]: "Happy Eyeballs Version 3: Better Connectivity Using Concurrency"
-
-- [nsswitch][]: "System Databases and Name Service Switch (from GNU libc manual)"
-
-- [limitations][] of getaddrinfo: "getaddrinfo sucks. everything else
-  is much worse (blog post covering material presented at FOSDEM 2025,
-  Brussels)"
-
-- [DApper][]: "Output from DApper project at 2023 DNS Hackathon, Rotterdam"
 
 ---
 
-[RFC3484]:
-https://www.rfc-editor.org/rfc/rfc3484.html
-"Default Address Selection for Internet Protocol version 6 (IPv6)"
+[RFC1035]:
+https://www.rfc-editor.org/rfc/rfc1035
+"DOMAIN NAMES - IMPLEMENTATION AND SPECIFICATION"
 
-[RFC3493]:
-https://www.rfc-editor.org/rfc/rfc3493.html
-"Basic Socket Interface Extensions for IPv6"
+[getBETTERinfo]:
+https:getBETTERinfo.md
+"proposed project: getBETTERinfo -- Making getaddrinfo() better"
 
-[RFC9460]:
-https://www.rfc-editor.org/rfc/rfc9460.html
-"Service Binding and Parameter Specification via the DNS (SVCB and HTTPS Resource Records)"
-
-[Happy Eyeballs v3 draft]: 
-https://datatracker.ietf.org/doc/html/draft-pauly-v6ops-happy-eyeballs-v3-02
-"Happy Eyeballs Version 3: Better Connectivity Using Concurrency"
-
-[nsswitch]:
-https://www.gnu.org/software/libc/manual/html_node/Name-Service-Switch.html
-"System Databases and Name Service Switch (from GNU libc manual)"
-
-[limitations]:
-https://valentin.gosu.se/blog/2025/02/getaddrinfo-sucks-everything-else-is-much-worse
-"getaddrinfo sucks. everything else is much worse (blog post covering material presented at FOSDEM 2025, Brussels)"
-
-[DApper]:
-https://github.com/DNS-Hackathon-2023/DApper
-"Output from DApper project at 2023 DNS Hackathon, Rotterdam"
+[Roadmap]:
+https:RoadMap.md
