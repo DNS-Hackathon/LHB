@@ -9,17 +9,34 @@
 # LHB Project at DNS Hackathon 2025 
 ## Overview
 
-- Quod? (What we did)
+- Quis? (Who worked on this project)
+- Quid? (What we did)
+- Ubi? 
+  Stockholm, as you know, so no slide
+- Quibus auxiliis?
+  Big thanks to amazing Hackathon organizers
 - Cur? (Why we did it)
 - Quo modo? (How we did it)
-- Quibus auxiliis? (Who worked on it)
+- Quando? id mar MMXXV atque ad XVII kal apr MMXXCV 
+
+See Asterix, La Serpe d'Or, p.43 (Anglice: The Golden Sickle)
 
 ---
 
 # LHB Project at DNS Hackathon 2025 
-## Quod? (What we did)
+## Quis? (Who worked on this project)
 
-- LHB — Lookup Hostname Best-practice
+- Ali
+- Asbjørn
+- Björn
+- Niall
+- Teddy
+
+---
+
+# LHB Project at DNS Hackathon 2025 
+## Quid? (What we did)
+
 - Discussion: **getaddrinfo()** vs current requirements
 - Strategy: wrapping vs extension
 - Artefacts: code, documentation in repo
@@ -43,16 +60,5 @@
 - Sketched a provisional architecture
 - Decided to work on POC code
 - Decided not to catalogue obstacles
-
----
-
-# LHB Project at DNS Hackathon 2025 
-## Quibus auxiliis? (Who worked on it)
-
-- Ali
-- Asbjørn
-- Björn
-- Niall
-- Teddy
 
 ---
