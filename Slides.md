@@ -11,15 +11,14 @@
 
 - Quis? (Who worked on this project)
 - Quid? (What we did)
-- Ubi? 
-  Stockholm, as you know, so no slide
+- Ubi? Holmiae (i Stockholm)
 - Quibus auxiliis?
   Big thanks to amazing Hackathon organizers
 - Cur? (Why we did it)
 - Quo modo? (How we did it)
 - Quando? id mar MMXXV atque ad XVII kal apr MMXXCV 
 
-See Asterix, La Serpe d'Or, p.43 (Anglice: The Golden Sickle)
+Vide Asterix, La Serpe d'Or, p.43 (Anglice: The Golden Sickle)
 
 ---
 
@@ -39,7 +38,7 @@ See Asterix, La Serpe d'Or, p.43 (Anglice: The Golden Sickle)
 
 - Discussion: **getaddrinfo()** vs current requirements
 - Strategy: wrapping vs extension
-- Artefacts: code, documentation in repo
+- Artefacts: code (including demo), documentation: in repo
 
 ---
 
@@ -60,5 +59,10 @@ See Asterix, La Serpe d'Or, p.43 (Anglice: The Golden Sickle)
 - Sketched a provisional architecture
 - Decided to work on POC code
 - Decided not to catalogue obstacles
+
+---
+
+# LHB Project at DNS Hackathon 2025 
+## Et nunc, Ali dat demonstrationem ...
 
 ---
