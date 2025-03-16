@@ -28,7 +28,7 @@ Hackathon
 
 - [Roadmap][]
 - [Progress][]
-- [Proof of Concept in Curl][]
+- [Proof of Concept in Curl][] and [Proof of Concept Integration in Ladybird][]
 
 
 ## TODO
@@ -62,3 +62,6 @@ Progress.md
 
 [Proof of Concept in Curl]:
 https://github.com/alimpfard/curl
+
+[Proof of Concept Integration in Ladybird]:
+https://github.com/alimpfard/ladybird/tree/dane
