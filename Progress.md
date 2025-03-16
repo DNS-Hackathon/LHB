@@ -7,7 +7,7 @@ there was strong overlap between Ali's proposal and Niall's, and also
 that Ali's had a scope that was narrow enough that concrete near-term
 results could be expected.
 
-A team formed around a merged project, including Asbjørn, Bjørn, and
+A team formed around a merged project, including Asbjørn, Björn, and
 Teddy, as well as Ali and Niall.
 
 ## Road Map
@@ -51,7 +51,7 @@ A lively and enjoyable discussion took place, with useful contributions
 from all team members.
 
 Ali, Asbjørn, and Niall proposed to produce code and documentation for
-review on day 2, based on this discussion. Bjørn and Teddy proposed
+review on day 2, based on this discussion. Björn and Teddy proposed
 not to contribute artefacts, so as to be free of "author bias" for
 this review.
 
