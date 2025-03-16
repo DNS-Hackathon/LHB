@@ -17,7 +17,7 @@ Two projects were proposed, which came to be merged at the beginning of the
 Hackathon
 
 - Ali: anonymous project motivated by obstacles encountered in
-  developing the LadyBird browser engine;
+  developing the Ladybird browser engine;
   
 - Niall: [getBETTERinfo][] project aimed at "Making getaddrinfo() better", either
   by specifying extensions to the API and underlying data structure, or by
@@ -49,11 +49,11 @@ https://www.rfc-editor.org/rfc/rfc1035
 "DOMAIN NAMES - IMPLEMENTATION AND SPECIFICATION"
 
 [getBETTERinfo]:
-https:getBETTERinfo.md
+getBETTERinfo.md
 "proposed project: getBETTERinfo -- Making getaddrinfo() better"
 
 [Roadmap]:
-https:RoadMap.md
+RoadMap.md
 
 [Progress]:
-https:Progress.md
+Progress.md
